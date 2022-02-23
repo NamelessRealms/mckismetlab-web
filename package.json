@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "main": "build/server/index.js",
   "license": "GNU General Public License v3.0",
-  "homepage": "https://github.com/QuasiMkl/mckismetlab-minecraft-mods-web",
+  "homepage": "https://github.com/QuasiMkl/MKLMinecraftMods",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/QuasiMkl/mckismetlab-minecraft-mods-web.git"
+    "url": "git+https://github.com/QuasiMkl/MKLMinecraftMods.git"
   },
   "bugs": {
-    "url": "https://github.com/QuasiMkl/mckismetlab-minecraft-mods-web/issues"
+    "url": "https://github.com/QuasiMkl/MKLMinecraftMods/issues"
   },
   "dependencies": {
     "express": "^4.17.1",
