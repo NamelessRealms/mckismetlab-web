@@ -1,0 +1,67 @@
+.paginationNumberButtonDiv {
+    
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .buttonClick {
+        cursor: pointer;
+        border: none;
+        // width: 100%;
+        width: 45px;
+        height: 100%;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 18px;
+        transition: all 0.1s linear;
+        background-color: transparent;
+        white-space: nowrap;
+        margin-left: 3px;
+        padding: 10px 15px;
+        display: flex;
+        align-items: center;
+    }
+
+    .buttonArrow {
+        cursor: pointer;
+        border: none;
+        // width: 100%;
+        width: 45px;
+        height: 100%;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 18px;
+        transition: all 0.1s linear;
+        background-color: #4a4a4a;
+        white-space: nowrap;
+        margin-left: 3px;
+        padding: 10px 15px;
+        display: flex;
+        align-items: center;
+
+        img {
+            height: 16px;
+        }
+    }
+
+    .buttonArrow:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .buttonArrow:active {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .buttonLeft {
+        img {
+            transform: rotate(90deg);
+        }
+    }
+
+    .buttonRight {
+        img {
+            transform: rotate(-90deg);
+        }
+    }
+}
