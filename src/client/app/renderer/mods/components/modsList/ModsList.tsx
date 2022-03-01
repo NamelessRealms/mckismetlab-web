@@ -4,7 +4,7 @@ import Filter from "../filter/Filter";
 import Sort from "../sort/Sort";
 import ModInfo from "./components/modInfo/ModInfo";
 import styles from "./ModsList.scss";
-import IModInfoData from "../../../../common/interface/IModInfoData";
+import IModInfoData from "../../../../common/interfaces/IModInfoData";
 
 const modInfosData: Array<IModInfoData> = [
     {

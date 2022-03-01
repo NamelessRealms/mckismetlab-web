@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./ModInfo.scss";
-import IModInfoData from "../../../../../../common/interface/IModInfoData";
+import IModInfoData from "../../../../../../common/interfaces/IModInfoData";
 
 interface IProps {
     data: IModInfoData
