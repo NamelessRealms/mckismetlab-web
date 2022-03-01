@@ -1,5 +1,5 @@
 import React from "react";
-import "./TopBar.scss";
+import styles from "./TopBar.scss";
 
 import ButtonFocus from "../buttonFocus/ButtonFocus";
 import mckismetlabLogoTitleImg from "../../../../../assets/images/logo/mckismetlab-title.png";
@@ -10,17 +10,17 @@ export default function TopBar() {
     const [searchInput, setSearchInput] = React.useState<string>();
 
     return (
-        <div className="TopBarDiv">
-            <div className="leftDiv">
+        <div className={styles.TopBarDiv}>
+            <div className={styles.leftDiv}>
                 <img src={mckismetlabLogoTitleImg} alt="logo-title" />
                 <div></div>
             </div>
-            <div className="centerDiv">
-                <InputIcon className="inputIcon" type="text" icon="search" value={searchInput} onChange={setSearchInput} />
+            <div className={styles.centerDiv}>
+                <InputIcon className={styles.inputIcon} type="text" icon="search" value={searchInput} onChange={setSearchInput} />
             </div>
-            <div className="rightDiv">
-                <div className="buttonDiv">
-                    <ButtonFocus className="buttonFocus" content="登入" />
+            <div className={styles.rightDiv}>
+                <div className={styles.buttonDiv}>
+                    <ButtonFocus className={styles.buttonFocus} content="登入" />
                 </div>
             </div>
         </div>

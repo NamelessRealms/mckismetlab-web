@@ -1,5 +1,5 @@
 import React from "react";
-import "./ButtonFocus.scss";
+import styles from "./ButtonFocus.scss";
 
 type IProps = {
     content: string | number;
@@ -11,7 +11,7 @@ type IProps = {
 export default function ButtonFocus(props: IProps) {
     return (
         <button
-            className={`buttonFocus ${props.className}`}
+            className={`${styles.buttonFocus} ${props.className}`}
             style={props.disabled !== undefined ? props.disabled ? { cursor: "not-allowed" } : { cursor: "pointer" } : { cursor: "pointer" }}
             onClick={() => {if (props.onClick !== undefined) props.onClick()}}
         >{props.content}</button>

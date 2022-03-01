@@ -1,12 +1,12 @@
 import React from "react";
 import TopBar from "../common/components/TopBar/TopBar";
 import ModsList from "./components/modsList/ModsList";
-import "./Mods.scss";
+import styles from "./Mods.scss";
 
 export default function Mods() {
 
     return (
-        <div className="modsDiv">
+        <div className={styles.modsDiv}>
             
             <TopBar />
             <ModsList />

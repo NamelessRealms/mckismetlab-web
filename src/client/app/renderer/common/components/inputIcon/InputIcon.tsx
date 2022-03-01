@@ -1,5 +1,5 @@
 import React from "react";
-import "./InputIcon.scss";
+import styles from "./InputIcon.scss";
 
 import emailImg from "../../../../../assets/icons/email.png";
 import passwordImg from "../../../../../assets/icons/password.png";
@@ -14,7 +14,7 @@ type IProps = {
 }
 export default function InputIcon(props: IProps) {
     return (
-        <div className={`inputIconDiv ${props.className}`}>
+        <div className={`${styles.inputIconDiv} ${props.className}`}>
             <GetIcon iconType={props.icon} />
             <input type={props.type} value={props.value !== undefined ? props.value : ""} onChange={(event) => { if(props.onChange !== undefined) props.onChange(event.target.value); }} />
         </div>
@@ -26,15 +26,15 @@ function GetIcon(props: { iconType: "email" | "password" | "search" }) {
     switch (props.iconType) {
         case "email":
             return (
-                <img className="icon" src={emailImg} alt="email" />
+                <img className={styles.icon} src={emailImg} alt="email" />
             );
         case "password":
             return (
-                <img className="icon" src={passwordImg} alt="password" />
+                <img className={styles.icon} src={passwordImg} alt="password" />
             );
         case "search":
             return (
-                <img className="icon" src={search} alt="search" />
+                <img className={styles.icon} src={search} alt="search" />
             )
     }
 

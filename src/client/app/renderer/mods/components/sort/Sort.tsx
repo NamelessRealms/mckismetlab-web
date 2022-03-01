@@ -1,7 +1,7 @@
 import React from "react";
 import ButtonToggle from "../../../common/components/buttonToggle/ButtonToggle";
 import PaginationArrow from "../../../common/components/paginationArrow/PaginationArrow";
-import "./Sort.scss";
+import styles from "./Sort.scss";
 
 const buttonToggleItemsData = [
     {
@@ -18,20 +18,28 @@ const buttonToggleItemsData = [
     }
 ]
 
-export default function Sort() {
+interface IProps {
+    paginationValue: number;
+    paginationMax: number;
+    onPaginationChange?: (value: number) => void;
+}
+
+export default function Sort(props: IProps) {
 
     return (
-        <div className="sortDiv">
+        <div className={styles.sortDiv}>
 
-            <div className="leftDiv">
+            <div className={styles.leftDiv}>
 
-                <h1 className="title">排序方式</h1>
+                <h1 className={styles.title}>排序方式</h1>
                 <ButtonToggle items={buttonToggleItemsData} />
 
             </div>
 
-            <div className="rightDiv">
-                <PaginationArrow value={1} max={12} />
+            <div className={styles.rightDiv}>
+                <PaginationArrow value={props.paginationValue} max={props.paginationMax} onChange={(value) => {
+                    if(props.onPaginationChange !== undefined) props.onPaginationChange(value);
+                }} />
             </div>
 
         </div>

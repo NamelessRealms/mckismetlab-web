@@ -1,5 +1,5 @@
 import React from "react";
-import "./Filter.scss";
+import styles from "./Filter.scss";
 
 import Checkbox from "../../../common/components/checkbox/Checkbox";
 
@@ -139,8 +139,8 @@ export default function Filter() {
             callback = setCheckboxItems;
         }
 
-        callback((item) => {
-            return item.map((value) => {
+        callback((item: any) => {
+            return item.map((value: any) => {
                 if (value.id === id) value.state = state;
                 return value;
             });
@@ -148,35 +148,35 @@ export default function Filter() {
     }
 
     return (
-        <div className="filterDiv">
+        <div className={styles.filterDiv}>
 
-            <div className="titleDiv">
+            <div className={styles.titleDiv}>
                 <img src={filterImg} alt="filter" />
-                <h1 className="text">條件篩選</h1>
+                <h1 className={styles.text}>條件篩選</h1>
             </div>
 
-            <h1 className="title">分類</h1>
-            <div className="checkboxArrayDiv">
+            <h1 className={styles.title}>分類</h1>
+            <div className={styles.checkboxArrayDiv}>
                 {
                     checkboxItems.map((item) => (
-                        <Checkbox key={item.id} className="checkboxItem" content={item.title} checked={item.state} onClickChecked={(state) => changeCheckboxItemState("checkboxItem", item.id, state)} imgSrc={item.iconImgSrc} />
+                        <Checkbox key={item.id} className={styles.checkboxItem} content={item.title} checked={item.state} onClickChecked={(state) => changeCheckboxItemState("checkboxItem", item.id, state)} imgSrc={item.iconImgSrc} />
                     ))
                 }
             </div>
 
-            <div className="tr"></div>
+            <div className={styles.tr}></div>
 
-            <h1 className="title">版本</h1>
-            <div className="selectVersionDiv">
+            <h1 className={styles.title}>版本</h1>
+            <div className={styles.selectVersionDiv}>
                 <DropMenu items={versionMenus} value="所有版本" ></DropMenu>
             </div>
 
-            <div className="tr"></div>
-            <h1 className="title">模組平台</h1>
-            <div className="checkboxModLoaderDiv">
+            <div className={styles.tr}></div>
+            <h1 className={styles.title}>模組平台</h1>
+            <div className={styles.checkboxModLoaderDiv}>
                 {
                     modLoadersItems.map((item) => (
-                        <Checkbox key={item.id} className="checkboxItem" content={item.title} checked={item.state} onClickChecked={(state) => changeCheckboxItemState("modLoader", item.id, state)} />
+                        <Checkbox key={item.id} className={styles.checkboxItem} content={item.title} checked={item.state} onClickChecked={(state) => changeCheckboxItemState("modLoader", item.id, state)} />
                     ))
                 }
             </div>

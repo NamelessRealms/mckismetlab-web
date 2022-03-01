@@ -1,5 +1,5 @@
 import React from "react";
-import "./ButtonToggle.scss";
+import styles from "./ButtonToggle.scss";
 
 interface IProps {
     items: Array<{
@@ -15,10 +15,11 @@ export default function ButtonToggle(props: IProps) {
     // const [items, setItems] = React.useState<Array<{ title: string; }>>(props.items);
 
     return (
-        <div className="buttonToggleDiv">
+        <div className={styles.buttonToggleDiv}>
             {
                 props.items.map((item, mapIndex) => (
-                    <button 
+                    <button
+                        key={item.id}
                         onClick={() => { setIndex(mapIndex); if(props.onClick !== undefined) props.onClick(item.id); }}
                         style={ mapIndex === index ? { backgroundColor: "#E0760F" } : {} }
                     >{item.title}</button>

@@ -1,46 +1,43 @@
 import React from "react";
-import "./PaginationArrow.scss";
+import styles from "./PaginationArrow.scss";
 
 import arrowImg from "../../../../../assets/icons/arrow.png";
 
 interface IProps {
     value: number;
     max: number;
+    onChange?: (value: number) => void;
 }
 
 export default function PaginationArrow(props: IProps) {
-    
-    const [value, setValue] = React.useState<number>(props.value);
 
     return (
-        <div className="paginationArrowDiv">
+        <div className={styles.paginationArrowDiv}>
 
-            <div className="paginationNumberDiv">
+            <div className={styles.paginationNumberDiv}>
 
-                <h1>{value}</h1>
+                <h1>{props.value}</h1>
                 <h1>/</h1>
                 <h1>{props.max}</h1>
 
             </div>
 
-            <div className="paginationButton">
+            <div className={styles.paginationButton}>
 
                 <button 
-                    className="buttonLeft"
+                    className={styles.buttonLeft}
                     onClick={() => {
-                        setValue((value) => {
-                            if(value > 1) value--
-                            return value;
-                        });
+                        let value = props.value;
+                        if(value > 1) value--;
+                        if(props.onChange !== undefined) props.onChange(value);
                     }}
                 ><img src={arrowImg} alt="arrow" /></button>
                 <button 
-                    className="buttonRight"
+                    className={styles.buttonRight}
                     onClick={() => {
-                        setValue((value) => {
-                            if(value < props.max) value++
-                            return value;
-                        });
+                        let value = props.value;
+                        if(value < props.max) value++
+                        if(props.onChange !== undefined) props.onChange(value);
                     }}
                 ><img src={arrowImg} alt="arrow" /></button>
                 
