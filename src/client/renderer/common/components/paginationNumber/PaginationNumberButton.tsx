@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./PaginationNumberButton.scss";
 
-import arrowImg from "../../../../../assets/icons/arrow.png";
+import arrowImg from "../../../../assets/icons/arrow.png";
 
 interface IProps {
     value: number;

@@ -2,10 +2,10 @@ import React from "react";
 import styles from "./ModInfo.scss";
 import IModInfoData from "../../../../../../common/interfaces/IModInfoData";
 
-import labelImg from "../../../../../../../assets/icons/label.png";
-import downloadImg from "../../../../../../../assets/icons/download.png";
-import refreshImg from "../../../../../../../assets/icons/refresh.png";
-import writingImg from "../../../../../../../assets/icons/writing.png";
+import labelImg from "../../../../../../assets/icons/label.png";
+import downloadImg from "../../../../../../assets/icons/download.png";
+import refreshImg from "../../../../../../assets/icons/refresh.png";
+import writingImg from "../../../../../../assets/icons/writing.png";
 import Dates from "../../../../../../common/utils/dates";
 
 interface IProps {

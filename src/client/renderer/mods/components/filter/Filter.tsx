@@ -3,18 +3,18 @@ import styles from "./Filter.scss";
 
 import Checkbox from "../../../common/components/checkbox/Checkbox";
 
-import filterImg from "../../../../../assets/icons/filter.png";
-import cpuImg from "../../../../../assets/icons/cpu.png";
-import magicImg from "../../../../../assets/icons/magic.png";
-import boxImg from "../../../../../assets/icons/box.png";
-import books from "../../../../../assets/icons/two-books.png";
-import adventureImg from "../../../../../assets/icons/adventure.png";
-import infoImg from "../../../../../assets/icons/information.png";
-import archiveImg from "../../../../../assets/icons/archive.png";
-import weaponImg from "../../../../../assets/icons/weapon.png";
-import settingImg from "../../../../../assets/icons/filter-setting.png";
-import footImg from "../../../../../assets/icons/fast-food.png";
-import technologyImg from "../../../../../assets/icons/technology.png";
+import filterImg from "../../../../assets/icons/filter.png";
+import cpuImg from "../../../../assets/icons/cpu.png";
+import magicImg from "../../../../assets/icons/magic.png";
+import boxImg from "../../../../assets/icons/box.png";
+import books from "../../../../assets/icons/two-books.png";
+import adventureImg from "../../../../assets/icons/adventure.png";
+import infoImg from "../../../../assets/icons/information.png";
+import archiveImg from "../../../../assets/icons/archive.png";
+import weaponImg from "../../../../assets/icons/weapon.png";
+import settingImg from "../../../../assets/icons/filter-setting.png";
+import footImg from "../../../../assets/icons/fast-food.png";
+import technologyImg from "../../../../assets/icons/technology.png";
 import DropMenu from "../../../common/components/dropMenu/DropMenu";
 
 interface IItem {

@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./TopBar.scss";
 
 import ButtonFocus from "../buttonFocus/ButtonFocus";
-import mckismetlabLogoTitleImg from "../../../../../assets/images/logo/mckismetlab-title.png";
+import mckismetlabLogoTitleImg from "../../../../assets/images/logo/mckismetlab-title.png";
 import InputIcon from "../inputIcon/InputIcon";
 
 export default function TopBar() {

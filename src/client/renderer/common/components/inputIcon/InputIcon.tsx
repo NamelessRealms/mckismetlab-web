@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./InputIcon.scss";
 
-import emailImg from "../../../../../assets/icons/email.png";
-import passwordImg from "../../../../../assets/icons/password.png";
-import search from "../../../../../assets/icons/search.png";
+import emailImg from "../../../../assets/icons/email.png";
+import passwordImg from "../../../../assets/icons/password.png";
+import search from "../../../../assets/icons/search.png";
 
 type IProps = {
     type: "email" | "text" | "password";

@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./DropMenu.scss";
 
 import Trail from "../../animations/components/trail/Trail";
-import arrowImg from "../../../../../assets/icons/arrow.png";
+import arrowImg from "../../../../assets/icons/arrow.png";
 
 interface IProps {
     items: Array<{
