@@ -7,7 +7,7 @@ module.exports = {
     resolve: {
         extensions: [".tsx", ".ts", ".js", ".json"]
     },
-    entry: "./src/client/index.tsx",
+    entry: "./src/index.tsx",
     devtool: "source-map",
     output: {
         path: path.resolve(__dirname, "build"),
