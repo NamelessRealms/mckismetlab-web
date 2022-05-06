@@ -4,6 +4,7 @@ body {
     padding: 0;
     border: 0;
     outline: 0;
+    overflow-x: hidden;
     font-weight: inherit;
     font-style: inherit;
     font-family: inherit;
@@ -12,4 +13,20 @@ body {
     vertical-align: baseline;
     box-sizing: border-box;
     background: #232323;
+}
+
+:root {
+    --dark-01-color: #121212;
+    --dark-02-color: #1B1B1B;
+    --dark-03-color: #232323;
+    --blue-01-color: #1C2230;
+    --blue-02-color: #14213D;
+    --blue-03-color: #5865F2;
+    --blue-04-color: #4655F4;
+    --orange-01-color: #E0760F;
+    --orange-02-color: #CA6707;
+    --orange-03-color: #FCA311;
+    --white-01-color: #E5E5E5;
+    --white-02-color: #F2F2F2;
+    --white-03-color: #FFFFFF;
 }

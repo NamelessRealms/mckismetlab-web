@@ -85,6 +85,17 @@ module.exports = {
                 use: {
                     loader: "url-loader"
                 }
+            },
+            {
+                test: /\.(mp4)$/,
+                use: {
+                    loader: "url-loader",
+                    options: {
+                        limit: 10000,
+                        name: "video/[name].[ext]",
+                        esModule: false
+                    }
+                } 
             }
         ]
     },

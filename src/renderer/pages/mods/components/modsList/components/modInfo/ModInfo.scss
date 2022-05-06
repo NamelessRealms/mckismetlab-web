@@ -1,0 +1,107 @@
+.modInfoDiv {
+
+    padding: 15px 20px;
+    border-radius: 15px;
+    background-color: #323232;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: all 0.1s linear;
+    margin-bottom: 10px;
+
+    .leftDiv {
+        .modImg {
+            width: 100px;
+            height: 100px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+
+    .rightDiv {
+
+        margin-left: 20px;
+
+        .rightDivTopDiv {
+
+            display: flex;
+            justify-content: flex-start;
+            align-items: baseline;
+
+            margin-bottom: 10px;
+
+            .rightDivTopDivLeftDiv {
+
+                .title {
+                    color: #fff;
+                    font-size: 1.4em;
+                    margin: 0;
+                    cursor: pointer;
+                }
+    
+                .summary {
+                    color: #fff;
+                    font-size: 1em;
+                    margin: 0;
+                }
+    
+            }
+
+            .rightDivTopDivRightDiv {
+                .author {
+                    color: #CBCBCB;
+                    font-size: 0.9em;
+                    margin: 0;
+                    margin-left: 20px;
+                }
+            }
+        }
+
+        .rightDivBottomDiv {
+
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            .infoDiv {
+
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                .leftDiv {
+                    img {
+                        width: 22px;
+                        height: 22px;
+                    }
+                }
+
+                .rightDiv {
+
+                    margin-left: 10px;
+                    margin-right: 20px;
+
+                    .title_1 {
+                        color: #CBCBCB;
+                        font-size: 0.8em;
+                        margin: 0;
+                    }
+
+                    .title_2 {
+                        color: #CBCBCB;
+                        font-size: 0.8em;
+                        margin: 0;
+                    }
+
+                }
+
+            }
+        }
+    }
+
+}
+
+.modInfoDiv:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}

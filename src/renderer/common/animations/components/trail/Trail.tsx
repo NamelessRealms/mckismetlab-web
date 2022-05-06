@@ -10,9 +10,9 @@ type IProps = {
     children: any;
 }
 
-export default function Trail(props: IProps) {
+let a = 0;
 
-    let a = 0;
+export default function Trail(props: IProps) {
 
     const items = React.Children.toArray(props.children);
     const trail = useTrail(items.length, {
@@ -32,6 +32,8 @@ export default function Trail(props: IProps) {
             if(props.onStart !== undefined) {
                 props.onStart();
             }
+
+            a = 0;
 
         },
         onResolve: () => {
