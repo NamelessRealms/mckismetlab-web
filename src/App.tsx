@@ -5,8 +5,8 @@ import {
 } from "react-router-dom";
 
 import Front from "./renderer/pages/front/Front";
-import Mods from "./renderer/pages/mods/Mods";
 import ModServer from "./renderer/pages/modServer/ModServer";
+import Sponsor from "./renderer/pages/sponsor/Sponsor";
 
 export default function App() {
   return (
@@ -14,6 +14,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Front />} />
         <Route path="/modServer" element={<ModServer />} />
+        <Route path="/sponsor" element={<Sponsor />} />
       </Routes>
     </BrowserRouter>
   );
