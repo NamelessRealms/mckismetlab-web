@@ -4,6 +4,7 @@ import styles from "./Sponsor.scss";
 
 import mcKismetLabTitleLog from "../../../assets/images/logo/mckismetlab-title.png";
 import quasiImg from "../../../assets/images/figure/quasi.png";
+import sponsorImg from "../../../assets/images/figure/sponsor.png";
 import CardText from "../../common/components/cardText/CardText";
 import Footer from "../../common/components/footer/Footer";
 
@@ -31,7 +32,7 @@ export default function Sponsor() {
 
                         <div className={styles.rightDiv}>
 
-                            <img src={quasiImg} alt="Quasi" />
+                            <img src={sponsorImg} alt="Sponsor" />
 
                         </div>
 
@@ -51,7 +52,7 @@ export default function Sponsor() {
                 <div className={styles.container}>
 
                     <h1 className={styles.label}>贊助能獲得什麼福利？</h1>
-                    <p className={styles.description}>嚴格來說你並不會有福利，我們希望你是有心想支持我們長期架設伺服器才贊助的，而不是為了快速取得某種東西、福利、功能而贊助我們，但我們還是會有小福利與功能給支持我們的玩家。</p>
+                    <p className={styles.description}>嚴格來說你並不會有福利，我們希望你是有心想支持我們長期架設伺服器才贊助的，而不是為了快速取得某種東西、福利、功能而贊助我們，但我們還是會有小小的福利與功能給支持我們的玩家。</p>
                     <p className={styles.description}>看一下我們給你什麼小福利與功能。</p>
 
                     <div className={styles.welfaresDiv}>

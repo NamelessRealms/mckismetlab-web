@@ -2,14 +2,20 @@ import React from "react";
 import TopBar from "../../common/components/TopBar/TopBar";
 import styles from "./ModServer.scss";
 
+import { useNavigate } from "react-router-dom";
+
 import server01Img from "../../../assets/images/background/server_01.png";
 import ButtonFocus from "../../common/components/buttonFocus/ButtonFocus";
 import TextImg from "../../common/components/textImg/TextImg";
-import quasiImg from "../../../assets/images/figure/quasi.png";
+import serverQuasiImg from "../../../assets/images/figure/server_quasi.png"
+import voteImg from "../../../assets/images/figure/vote.png";
+import regularImg from "../../../assets/images/figure/regular.png";
 import CardText from "../../common/components/cardText/CardText";
 import Footer from "../../common/components/footer/Footer";
 
 export default function ModServer() {
+
+    const navigate = useNavigate();
 
     return (
         <div className={styles.modServerDiv}>
@@ -31,8 +37,8 @@ export default function ModServer() {
                         <p className={styles.description}>我們提供您自由探索多人遊玩平台、模組討論區、管理伺服等等服務，讓你不用煩惱自架伺服器不會玩模組的問題。</p>
 
                         <div className={styles.buttonDiv}>
-                            <ButtonFocus className={styles.buttonFocusDiscord} content="DISCORD"></ButtonFocus>
-                            <ButtonFocus className={styles.buttonFocusLauncher} content="下載啟動器"></ButtonFocus>
+                            <ButtonFocus className={styles.buttonFocusDiscord} content="DISCORD" onClick={() => window.open("https://discord.com/invite/8BB3NY8")}></ButtonFocus>
+                            <ButtonFocus className={styles.buttonFocusLauncher} content="下載啟動器" onClick={() => navigate("/launcher")}></ButtonFocus>
                         </div>
 
                     </div>
@@ -83,23 +89,29 @@ export default function ModServer() {
             <TextImg
                 label="全年無休，365天不間斷"
                 description="我們提供穩定的多人模組遊玩伺服器、模組社群討論區等等服務，不會突然無預警關服。"
-                imgSrc={quasiImg}
+                imgSrc={serverQuasiImg}
                 reverse={true}
+                imgDivWidth="80%"
+                imgWidth="80%"
             />
 
             {/* block 04 */}
             <TextImg
                 label="讓玩家以投票的方式選擇模組包"
                 description="我們提供穩定的多人模組遊玩伺服器、模組社群討論區等等服務，不會突然無預警關服。"
-                imgSrc={quasiImg}
+                imgSrc={voteImg}
+                imgDivWidth="80%"
+                imgWidth="80%"
             />
 
             {/* block 05 */}
             <TextImg
                 label="定期更換不同的模組包"
                 description="我們提供穩定的多人模組遊玩伺服器、模組社群討論區等等服務，不會突然無預警關服。"
-                imgSrc={quasiImg}
+                imgSrc={regularImg}
                 reverse={true}
+                imgDivWidth="80%"
+                imgWidth="80%"
             />
 
             {/* block 06 */}
@@ -127,7 +139,7 @@ export default function ModServer() {
 
                     <h1 className={styles.label02}>來吧，馬上加入我們吧</h1>
                     <p className={styles.description02}>詳細加入訊息公佈在Discord</p>
-                    <ButtonFocus className={styles.discordButton} content="DISCORD" />
+                    <ButtonFocus className={styles.discordButton} content="DISCORD" onClick={() => window.open("https://discord.com/invite/8BB3NY8")} />
 
                 </div>
 

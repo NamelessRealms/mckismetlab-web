@@ -5,6 +5,7 @@ import styles from "./Team.scss";
 import liujuhsinImg from "../../../assets/images/figure/liujuhsin.png";
 import moonFlameImg from "../../../assets/images/figure/Moon_Flame.png";
 import quasiImg from "../../../assets/images/figure/quasi.png";
+import teamImg from "../../../assets/images/figure/team.png";
 import Footer from "../../common/components/footer/Footer";
 
 export default function Team() {
@@ -23,11 +24,11 @@ export default function Team() {
 
                         <div className={styles.leftDiv}>
                             <h1 className={styles.label}>在在在 <br /> 無名伺服器 <br /> 團隊</h1>
-                            <p className={styles.description}>長期架設伺服器需要耗費大量時間與金錢，如果你願意提供贊助，我們非常的感謝你。</p>
+                            <p className={styles.description}>長期架設伺服器需要耗費大量時間與金錢，如果你願意提供贊助，我們非常感謝你。</p>
                         </div>
 
                         <div className={styles.rightDiv}>
-                            <img src={quasiImg} alt="Quasi" />
+                            <img src={teamImg} alt="Team" />
                         </div>
 
                     </div>

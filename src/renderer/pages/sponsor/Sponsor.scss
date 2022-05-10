@@ -49,6 +49,19 @@
                 }
 
                 .rightDiv {
+                    // width: 100%;
+                    text-align: right;
+                    
+                    img {
+                        width: 70%;
+                        image-rendering: -moz-crisp-edges;
+                        image-rendering: -o-crisp-edges;
+                        image-rendering: pixelated;
+                        image-rendering: -webkit-optimize-contrast;
+                    }
+                }
+
+                .rightDiv {
                     @media screen and (max-width: 767px) {
                         img {
                             display: none;
