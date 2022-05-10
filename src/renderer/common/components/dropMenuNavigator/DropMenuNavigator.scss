@@ -37,7 +37,8 @@
         z-index: 1;
         box-sizing: border-box;
         border-radius: 0px 5px 5px 5px;
-        text-align: left;
+        // text-align: left;
+        left: 0;
         padding: 10px 20px;
 
         div {
@@ -63,6 +64,13 @@
         div div:hover {
             border-radius: 5px;
             // background: #333333;
+        }
+    }
+
+    @media screen and (max-width: 1280px) {
+        .menu {
+            border-radius: 0px 0px 5px 5px;
+            right: 0;
         }
     }
 }

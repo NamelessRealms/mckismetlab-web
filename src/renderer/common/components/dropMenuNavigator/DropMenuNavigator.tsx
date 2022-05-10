@@ -22,10 +22,18 @@ export default function DropMenuNavigator(props: IProps) {
             <div
                 className={styles.dropMenuButton}
                 onMouseEnter={() => {
-                    setOpen(true);
+                    if(window.innerWidth >= 1280) setOpen(true);
                 }}
                 onMouseLeave={() => {
                     setOpen(false);
+                }}
+                onClick={() => {
+                    if(open) {
+                        setItemClick(true);
+                        setOpen(false);
+                    } else {
+                        setOpen(true);
+                    }
                 }}
                 style={open ? { backgroundColor: "#E0760F" } : {}}
             >
