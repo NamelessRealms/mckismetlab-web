@@ -8,11 +8,26 @@ body {
     font-weight: inherit;
     font-style: inherit;
     font-family: inherit;
+    font-family: Roboto, Arial, sans-serif, --font-chinese-traditional;
     font-size: 100%;
     // font-size: 16px;
     vertical-align: baseline;
     box-sizing: border-box;
     background: #232323;
+}
+
+html::-webkit-scrollbar {
+    width: 8px;
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: #979797;
+}
+
+html::-webkit-scrollbar-track {
+    border-radius: 20px;
+    background-color: rgba(100, 100, 100, 0.5);
 }
 
 :root {
@@ -29,4 +44,19 @@ body {
     --white-01-color: #E5E5E5;
     --white-02-color: #F2F2F2;
     --white-03-color: #FFFFFF;
+
+    --font-chinese-traditional: {
+        Whitney,
+        "Microsoft JhengHei",
+        微軟正黑體,
+        "Microsoft JhengHei UI",
+        "Microsoft YaHei",
+        微軟雅黑,
+        宋体,
+        SimSun,
+        "Helvetica Neue",
+        Helvetica,
+        Arial,
+        sans-serif
+    }
 }
