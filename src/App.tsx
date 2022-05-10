@@ -9,6 +9,7 @@ import Launcher from "./renderer/pages/launcher/Launcher";
 import ModServer from "./renderer/pages/modServer/ModServer";
 import Sponsor from "./renderer/pages/sponsor/Sponsor";
 import Team from "./renderer/pages/team/Team";
+import VoteModpack from "./renderer/pages/voteModpack/VoteModpack";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="/sponsor" element={<Sponsor />} />
         <Route path="/launcher" element={<Launcher />} />
         <Route path="/team" element={<Team />} />
+        <Route path="/VoteModpack" element={<VoteModpack />} />
       </Routes>
     </BrowserRouter>
   );
