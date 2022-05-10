@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./TopBar.scss";
 
+import { useNavigate } from "react-router-dom";
+
 import ButtonFocus from "../buttonFocus/ButtonFocus";
 import mckismetlabLogoTitleImg from "../../../../assets/images/logo/mckismetlab-title.png";
 import InputIcon from "../inputIcon/InputIcon";
@@ -9,7 +11,7 @@ import DropMenuNavigator from "../dropMenuNavigator/DropMenuNavigator";
 const menus = [
     {
         label: "伺服器",
-        navigator: null,
+        navigator: "/modServer",
         serverDropMenus: [
             {
                 label: "模組包伺服器",
@@ -19,27 +21,27 @@ const menus = [
     },
     {
         label: "模組包",
-        navigator: null,
+        navigator: "/voteModpack",
         serverDropMenus: null
     },
-    {
-        label: "新手教學",
-        navigator: null,
-        serverDropMenus: null
-    },
+    // {
+    //     label: "新手教學",
+    //     navigator: null,
+    //     serverDropMenus: null
+    // },
     {
         label: "下載啟動器",
-        navigator: null,
+        navigator: "/launcher",
         serverDropMenus: null
     },
     {
         label: "贊助我們",
-        navigator: null,
+        navigator: "/sponsor",
         serverDropMenus: null
     },
     {
         label: "團隊",
-        navigator: null,
+        navigator: "/team",
         serverDropMenus: null
     }
 ]
@@ -47,12 +49,13 @@ const menus = [
 export default function TopBar() {
 
     const [mediaMenuOpen, setMediaMenuOpen] = React.useState(false);
+    const navigate = useNavigate();
 
     return (
         <div className={styles.topBarDiv}>
             <div className={styles.container}>
                 <div className={styles.leftDiv}>
-                    <img src={mckismetlabLogoTitleImg} alt="logo-title" />
+                    <img src={mckismetlabLogoTitleImg} alt="logo-title" onClick={() => navigate("/")} />
                     <div></div>
                 </div>
                 {/* <div className={styles.centerDiv}>
@@ -69,9 +72,9 @@ export default function TopBar() {
                                     {
                                         menu.serverDropMenus !== null
                                             ?
-                                            <DropMenuNavigator className={styles.dropMenuNavigator} label={menu.label} items={menu.serverDropMenus}></DropMenuNavigator>
+                                            <DropMenuNavigator className={styles.dropMenuNavigator} label={menu.label} items={menu.serverDropMenus} onClick={() => navigate(menu.navigator)}></DropMenuNavigator>
                                             :
-                                            <ButtonFocus className={styles.buttonFocus} content={menu.label} />
+                                            <ButtonFocus className={styles.buttonFocus} content={menu.label} onClick={() => navigate(menu.navigator)} />
                                     }
                                 </React.Fragment>
                             ))
@@ -104,9 +107,9 @@ export default function TopBar() {
                                             {
                                                 menu.serverDropMenus !== null
                                                     ?
-                                                    <DropMenuNavigator className={styles.dropMenuNavigator} label={menu.label} items={menu.serverDropMenus}></DropMenuNavigator>
+                                                    <DropMenuNavigator className={styles.dropMenuNavigator} label={menu.label} items={menu.serverDropMenus} onClick={() => navigate(menu.navigator)}></DropMenuNavigator>
                                                     :
-                                                    <ButtonFocus className={styles.buttonFocus} content={menu.label} />
+                                                    <ButtonFocus className={styles.buttonFocus} content={menu.label} onClick={() => navigate(menu.navigator)}/>
                                             }
                                         </React.Fragment>
                                     ))

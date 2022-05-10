@@ -13,7 +13,7 @@ export default function ButtonFocus(props: IProps) {
         <button
             className={`${styles.buttonFocus} ${props.className}`}
             style={props.disabled !== undefined ? props.disabled ? { cursor: "not-allowed" } : { cursor: "pointer" } : { cursor: "pointer" }}
-            onClick={() => {if (props.onClick !== undefined) props.onClick()}}
+            onClick={() => {if (props.onClick !== undefined && (props.disabled !== undefined ? !props.disabled : true)) props.onClick()}}
         >{props.content}</button>
     );
 }

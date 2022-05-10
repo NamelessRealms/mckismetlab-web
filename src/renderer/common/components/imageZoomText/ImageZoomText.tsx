@@ -11,7 +11,9 @@ type IProps = {
 export default function ImageZoomText(props: IProps) {
 
     return (
-        <div className={styles.imageZoomTextDiv}>
+        <div className={styles.imageZoomTextDiv} onClick={() => {
+            if(props.onClick !== undefined) props.onClick();
+        }}>
 
             <img className={styles.imgZoom} src={props.imgSrc} alt={props.alt} />
             

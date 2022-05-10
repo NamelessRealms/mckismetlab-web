@@ -8,8 +8,9 @@ type IProps = {
     reverse?: boolean;
     alt?: string;
     backgroundColor?: string;
+    imgDivWidth?: string;
     imgWidth?: string;
-    imgHeight?: string;
+    imgDivHeight?: string;
     className?: string;
 }
 
@@ -23,8 +24,8 @@ export default function TextImg(props: IProps) {
 
             <div className={styles.container} style={props.reverse !== undefined ? props.reverse ? { flexDirection: "row-reverse" }  : {} : {}}>
 
-                <div className={styles.imgDiv} style={{ width: props.imgWidth, height: props.imgHeight }}>
-                    <img src={props.imgSrc} alt={props.alt} />
+                <div className={styles.imgDiv} style={ props.reverse ? { width: props.imgDivWidth, height: props.imgDivHeight, textAlign: "right" } : { width: props.imgDivWidth, height: props.imgDivHeight, textAlign: "left" } }>
+                    <img src={props.imgSrc} alt={props.alt} style={{ width: props.imgWidth }} />
                 </div>
 
                 <div className={styles.textDiv}>
