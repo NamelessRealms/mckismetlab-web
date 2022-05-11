@@ -52,7 +52,7 @@ export default function Front() {
             {/* block 02 */}
             <TextImg
                 label="長期開服，服務不間斷"
-                description="我們提供穩定的多人模組遊玩伺服器、模組社群討論區等等服務，不會突然無預警關服。"
+                description="我們提供穩定的多人遊玩伺服器、社群討論區等等服務，不會突然無預警關服。"
                 imgSrc={serverQuasiImg}
                 imgDivWidth="80%"
                 imgWidth="80%"

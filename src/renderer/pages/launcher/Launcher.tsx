@@ -56,7 +56,7 @@ export default function Launcher() {
             <TextImg
                 className={styles.textImg}
                 label="簡潔舒適的 UI"
-                description="我們提供穩定的多人模組遊玩伺服器、模組社群討論區等等服務，不會突然無預警關服。"
+                description="沒有複雜的UI設計，就簡單、舒適、容易使用。"
                 imgSrc={launcher01Img}
                 reverse={false}
                 backgroundColor="--dark-03-color"
@@ -65,7 +65,7 @@ export default function Launcher() {
             <TextImg
                 className={styles.textImg}
                 label="Java 設定管理"
-                description="我們提供穩定的多人模組遊玩伺服器、模組社群討論區等等服務，不會突然無預警關服。"
+                description="你可以個別設定 Java 記憶體、參數、指定路徑。"
                 imgSrc={launcher02Img}
                 reverse={true}
                 backgroundColor="--dark-03-color"
@@ -73,8 +73,8 @@ export default function Launcher() {
             />
             <TextImg
                 className={styles.textImg}
-                label="自動安裝模組包、模組"
-                description="我們提供穩定的多人模組遊玩伺服器、模組社群討論區等等服務，不會突然無預警關服。"
+                label="自動安裝"
+                description="自動安裝模組包、自定義模組、模組載入器，不需要你自己手動安裝。"
                 imgSrc={launcher03Img}
                 reverse={false}
                 backgroundColor="--dark-03-color"
@@ -83,7 +83,7 @@ export default function Launcher() {
             <TextImg
                 className={styles.textImg}
                 label="多語言支持"
-                description="我們提供穩定的多人模組遊玩伺服器、模組社群討論區等等服務，不會突然無預警關服。"
+                description="啟動器多語言支持，快速切換語言。"
                 imgSrc={launcher04Img}
                 reverse={true}
                 backgroundColor="--dark-03-color"

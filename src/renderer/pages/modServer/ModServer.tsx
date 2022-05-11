@@ -34,7 +34,7 @@ export default function ModServer() {
                     <div className={styles.container}>
 
                         <h1 className={styles.label}>模組包伺服器</h1>
-                        <p className={styles.description}>我們提供您自由探索多人遊玩平台、模組討論區、管理伺服等等服務，讓你不用煩惱自架伺服器不會玩模組的問題。</p>
+                        <p className={styles.description}>我們提供您自由探索多人遊玩平台、模組討論區、管理伺服等等服務，讓你不用煩惱自架伺服器或不會玩模組的問題。</p>
 
                         <div className={styles.buttonDiv}>
                             <ButtonFocus className={styles.buttonFocusDiscord} content="DISCORD" onClick={() => window.open("https://discord.com/invite/8BB3NY8")}></ButtonFocus>
@@ -88,7 +88,7 @@ export default function ModServer() {
             {/* block 03 */}
             <TextImg
                 label="全年無休，365天不間斷"
-                description="我們提供穩定的多人模組遊玩伺服器、模組社群討論區等等服務，不會突然無預警關服。"
+                description="365天 24hr 不停開服，不會突然無預警關服消失。"
                 imgSrc={serverQuasiImg}
                 reverse={true}
                 imgDivWidth="80%"
@@ -98,7 +98,7 @@ export default function ModServer() {
             {/* block 04 */}
             <TextImg
                 label="讓玩家以投票的方式選擇模組包"
-                description="我們提供穩定的多人模組遊玩伺服器、模組社群討論區等等服務，不會突然無預警關服。"
+                description="給玩家可以以投票的方式選擇模組包你想要玩的模組包。"
                 imgSrc={voteImg}
                 imgDivWidth="80%"
                 imgWidth="80%"
@@ -107,7 +107,7 @@ export default function ModServer() {
             {/* block 05 */}
             <TextImg
                 label="定期更換不同的模組包"
-                description="我們提供穩定的多人模組遊玩伺服器、模組社群討論區等等服務，不會突然無預警關服。"
+                description="我們定期更換不同的模組包，不會突然停換模組包，造成空服的問題。"
                 imgSrc={regularImg}
                 reverse={true}
                 imgDivWidth="80%"
