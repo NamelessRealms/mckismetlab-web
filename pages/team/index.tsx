@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Team.module.scss";
 import Image from "next/image";
+import Head from "next/head";
 
 import liujuhsinImg from "../../assets/images/figure/liujuhsin.png";
 import moonFlameImg from "../../assets/images/figure/Moon_Flame.png";
@@ -14,6 +15,10 @@ export default function Team() {
     return (
         <div className={styles.teamDiv}>
 
+            <Head>
+                <title>團隊 | mcKismetLab</title>
+            </Head>
+
             <TopBar />
 
             {/* block 01 */}
@@ -25,15 +30,19 @@ export default function Team() {
 
                         <div className={styles.leftDiv}>
                             <h1 className={styles.label}>在在在 <br /> 無名伺服器 <br /> 團隊</h1>
-                            <p className={styles.description}>長期架設伺服器需要耗費大量時間與金錢，如果你願意提供贊助，我們非常感謝你。</p>
+                            {/* <p className={styles.description}></p> */}
                         </div>
 
                         <div className={styles.rightDiv}>
                             {/* <img src={teamImg} alt="Team" /> */}
-                            <Image
-                                src={teamImg}
-                                alt="Team"
-                            />
+                            <div className={styles.imgDiv}>
+                                <Image
+                                    src={teamImg}
+                                    alt="Team"
+                                    layout="responsive"
+                                    objectFit="cover"
+                                />
+                            </div>
                         </div>
 
                     </div>
@@ -79,7 +88,6 @@ export default function Team() {
             </div>
 
             <Footer />
-
         </div>
     )
 }

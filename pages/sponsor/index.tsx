@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Sponsor.module.scss";
 import Image from "next/image";
+import Head from "next/head";
 
 import mcKismetLabTitleLog from "../../assets/images/logo/mckismetlab-title.png";
 import sponsorImg from "../../assets/images/figure/sponsor.png";
@@ -12,6 +13,10 @@ export default function Sponsor() {
 
     return (
         <div className={styles.sponsorDiv}>
+
+            <Head>
+                <title>贊助我們 | mcKismetLab</title>
+            </Head>
 
             <TopBar />
 

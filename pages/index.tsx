@@ -1,5 +1,6 @@
 import TopBar from "../components/TopBar/TopBar"
 import styles from "./Home.module.scss"
+import Head from "next/head";
 
 import { useRouter } from "next/router";
 
@@ -17,6 +18,10 @@ export default function Home() {
 
   return (
     <div className={styles.homeDiv}>
+
+      <Head>
+        <title>無名伺服器 | mcKismetLab</title>
+      </Head>
 
       <TopBar />
 

@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Launcher.module.scss";
+import Head from "next/head";
 
 import launcher01Img from "../../assets/images/background/launcher_01.png";
 import launcher02Img from "../../assets/images/background/launcher_02.png";
@@ -14,6 +15,10 @@ export default function Launcher() {
 
     return (
         <div className={styles.launcherDiv}>
+
+            <Head>
+                <title>無名啟動器 | mcKismetLab</title>
+            </Head>
 
             <TopBar />
 
@@ -41,7 +46,7 @@ export default function Launcher() {
                         <div className={styles.buttonDiv}>
                             <ButtonFocus className={styles.downloadButton} content="Mac"></ButtonFocus>
                             <ButtonFocus className={styles.downloadButton} content="Windows"></ButtonFocus>
-                            <ButtonFocus className={styles.downloadButton} content="Linux"></ButtonFocus>
+                            {/* <ButtonFocus className={styles.downloadButton} content="Linux"></ButtonFocus> */}
                         </div>
 
                     </div>
@@ -80,8 +85,8 @@ export default function Launcher() {
             />
             <TextImg
                 className={styles.textImg}
-                label="多語言支持"
-                description="啟動器多語言支持，快速切換語言。"
+                label="國際化"
+                description="啟動器支持多語言，快速切換語言。"
                 imgSrc={launcher04Img}
                 reverse={true}
                 backgroundColor="--dark-03-color"
@@ -107,7 +112,7 @@ export default function Launcher() {
                     </div>
 
                     <div className={styles.rightDiv}>
-                        <h1 className={styles.label}>無名啟動器源代碼都在 GitHub <br/> License: GPL-3.0</h1>
+                        <h1 className={styles.label}>無名啟動器源代碼都在 GitHub <br /> License: GPL-3.0</h1>
                     </div>
 
                 </div>

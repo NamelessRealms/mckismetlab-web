@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./ModServer.module.scss";
 import Image from "next/image";
+import Head from "next/head";
 
 import { useRouter } from "next/router";
 
@@ -21,6 +22,10 @@ export default function ModServer() {
     return (
         <div className={styles.modServerDiv}>
 
+            <Head>
+                <title>模組包伺服器 | mcKismetLab</title>
+            </Head>
+
             <TopBar />
 
             {/* block 01 */}
@@ -28,10 +33,14 @@ export default function ModServer() {
 
                 <div className={styles.imgDiv}>
                     {/* <img src={server01Img} alt="server image" /> */}
-                    <Image
-                        src={server01Img}
-                        alt="server image"
-                    />
+                    <div className={styles.img}>
+                        <Image
+                            src={server01Img}
+                            alt="server image"
+                            layout="fill"
+                            objectFit="cover"
+                        />
+                    </div>
                 </div>
 
                 <div className={styles.labelDiv}>
@@ -96,8 +105,7 @@ export default function ModServer() {
                 description="365天 24hr 不停開服，不會突然無預警關服消失。"
                 imgSrc={serverQuasiImg}
                 reverse={true}
-                imgDivWidth="80%"
-                imgWidth="80%"
+                imgDivWidth="50%"
             />
 
             {/* block 04 */}
@@ -105,8 +113,7 @@ export default function ModServer() {
                 label="讓玩家以投票的方式選擇模組包"
                 description="給玩家可以以投票的方式選擇模組包你想要玩的模組包。"
                 imgSrc={voteImg}
-                imgDivWidth="80%"
-                imgWidth="80%"
+                imgDivWidth="50%"
             />
 
             {/* block 05 */}
@@ -115,8 +122,7 @@ export default function ModServer() {
                 description="我們定期更換不同的模組包，不會突然停換模組包，造成空服的問題。"
                 imgSrc={regularImg}
                 reverse={true}
-                imgDivWidth="80%"
-                imgWidth="80%"
+                imgDivWidth="50%"
             />
 
             {/* block 06 */}

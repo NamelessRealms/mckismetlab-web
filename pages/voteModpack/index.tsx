@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./VoteModpack.module.scss";
-import Image from "next/image";
+import Head from "next/head";
+
 import changeModpackHistory from "../../data/change_modpack_history.json";
 import TopBar from "../../components/TopBar/TopBar";
 import Footer from "../../components/footer/Footer";
@@ -21,6 +22,10 @@ export default function VoteModpack() {
 
     return (
         <div className={styles.voteModpackDiv}>
+
+            <Head>
+                <title>伺服器換包 | mcKismetLab</title>
+            </Head>
 
             <TopBar />
 
