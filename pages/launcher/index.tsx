@@ -10,8 +10,25 @@ import TopBar from "../../components/TopBar/TopBar";
 import ButtonFocus from "../../components/buttonFocus/ButtonFocus";
 import TextImg from "../../components/textImg/TextImg";
 import Footer from "../../components/footer/Footer";
+import { GetStaticProps } from "next";
+import DropMenuNavigator from "../../components/dropMenuNavigator/DropMenuNavigator";
 
-export default function Launcher() {
+interface ILauncher {
+    version: string;
+    downloadUrl: {
+        mac: {
+            arm64: string | null;
+            x64: string | null;
+        };
+        windows: string | null;
+    }
+}
+
+interface IProps {
+    launcher: ILauncher | null
+}
+
+export default function Launcher(props: IProps) {
 
     return (
         <div className={styles.launcherDiv}>
@@ -44,10 +61,39 @@ export default function Launcher() {
                         <p className={styles.description}>我們開發的模組啟動器，給你方便快速啟動遊戲，無需自己安裝模組包、Java、自定義模組，就能馬上進來遊玩。</p>
 
                         <div className={styles.buttonDiv}>
-                            <ButtonFocus className={styles.downloadButton} content="Mac"></ButtonFocus>
-                            <ButtonFocus className={styles.downloadButton} content="Windows"></ButtonFocus>
-                            {/* <ButtonFocus className={styles.downloadButton} content="Linux"></ButtonFocus> */}
+                            {
+                                props.launcher !== null
+                                    ?
+                                    <>
+                                        <ButtonFocus
+                                            className={styles.downloadButton}
+                                            content="Windows"
+                                            onClick={() => { if(props.launcher?.downloadUrl.windows !== null) window.open(props.launcher?.downloadUrl.windows) }}
+                                        />
+                                        <DropMenuNavigator
+                                            className={styles.downloadButton}
+                                            hover={false}
+                                            label="Mac"
+                                            items={[{ label: "arm64", value: props.launcher.downloadUrl.mac.arm64 !== null ? props.launcher.downloadUrl.mac.arm64 : "null" }, { label: "x64", value: props.launcher.downloadUrl.mac.x64 !== null ? props.launcher.downloadUrl.mac.x64 : "null" }]}
+                                            onClick={(value) => { if (value !== "null") window.open(value); }}
+                                        />
+                                    </>
+                                    :
+                                    <>
+                                        <ButtonFocus className={styles.downloadButton} content="Windows"></ButtonFocus>
+                                        <ButtonFocus className={styles.downloadButton} content="Mac"></ButtonFocus>
+                                        {/* <ButtonFocus className={styles.downloadButton} content="Linux"></ButtonFocus> */}
+                                    </>
+                            }
                         </div>
+
+                        {
+                            props.launcher !== null
+                            ?
+                            <h1 className={styles.launcherVersionText}>{props.launcher.version}</h1>
+                            :
+                            null
+                        }
 
                     </div>
 
@@ -123,4 +169,42 @@ export default function Launcher() {
 
         </div>
     )
+}
+
+export const getStaticProps: GetStaticProps = async (context) => {
+
+    const githubResponse = await fetch("https://api.github.com/repos/mcKismetLab/mckismetlab-launcher/releases/latest");
+
+    let launcherData: ILauncher | null = null;
+
+    if (githubResponse.status === 200) {
+        const mckismetlabLauncherData = await githubResponse.json();
+        const assets = mckismetlabLauncherData.assets as Array<any>;
+        const version = mckismetlabLauncherData.tag_name;
+        const windows = assets.find((item: any) => item.name.split(".").pop() === "exe");
+        const macArm64 = assets.find((item: any) => {
+            if (item.name.split(".").pop() === "dmg") return item.name.indexOf("arm64") !== -1;
+            return false;
+        });
+        const macX64 = assets.find((item: any) => {
+            if (item.name.split(".").pop() === "dmg") return item.name.indexOf("arm64") === -1;
+            return false;
+        });
+        launcherData = {
+            version: version,
+            downloadUrl: {
+                mac: {
+                    arm64: macArm64 !== undefined ? macArm64.browser_download_url : null,
+                    x64: macX64 !== undefined ? macX64.browser_download_url : null
+                },
+                windows: windows !== undefined ? windows.browser_download_url : null
+            }
+        }
+    }
+
+    return {
+        props: {
+            launcher: launcherData
+        }
+    }
 }

@@ -7,6 +7,7 @@ type IProps = {
     label: string;
     items: Array<{ label: string; value: string }>;
     className?: string;
+    hover?: boolean;
     onClick?: (value: string) => void;
 }
 
@@ -21,7 +22,7 @@ export default function DropMenuNavigator(props: IProps) {
             <div
                 className={styles.dropMenuButton}
                 onMouseEnter={() => {
-                    if(window.innerWidth >= 1280) setOpen(true);
+                    if(window.innerWidth >= 1280 && props.hover !== undefined ? props.hover : true) setOpen(true);
                 }}
                 onMouseLeave={() => {
                     setOpen(false);
