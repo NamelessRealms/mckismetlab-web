@@ -47,7 +47,7 @@ export default function VoteModpack() {
                 </div>
 
                 <div className={styles.bottomDiv}>
-                    <ButtonFocus className={styles.voteModpackButton} content="前往投票" disabled={true} />
+                    <ButtonFocus className={styles.voteModpackButton} content="前往投票" disabled={true} onClick={() => window.open("https://forms.gle/tECwea72Qs5SNZeV8")} />
                 </div>
 
             </div>
@@ -56,7 +56,7 @@ export default function VoteModpack() {
             <div className={styles.block02}>
                 <div className={styles.container}>
                     <h1 className={styles.label}>想先推薦下一季模組包? 沒問題。</h1>
-                    <ButtonFocus className={styles.recommendModpackButton} content="前往推薦模組包" />
+                    <ButtonFocus className={styles.recommendModpackButton} content="前往推薦模組包" onClick={() => window.open("https://forms.gle/tnMgrh8JXGocTWsB8")} />
                 </div>
             </div>
 
