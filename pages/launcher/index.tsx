@@ -205,6 +205,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
     return {
         props: {
             launcher: launcherData
-        }
+        },
+        revalidate: 60
     }
 }
