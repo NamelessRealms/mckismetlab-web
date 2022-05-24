@@ -76,7 +76,7 @@ export default function Home() {
 
         <div className={styles.discordAndIpButtonDiv}>
           <ButtonFocus className={styles.buttonFocusDiscord} content="DISCORD" onClick={() => window.open("https://discord.com/invite/8BB3NY8")}></ButtonFocus>
-          <ButtonFocus className={styles.buttonFocusServerIp} content="mcKismetLab.net"></ButtonFocus>
+          <ButtonFocus className={styles.buttonFocusServerIp} content="mcKismetLab.net" onClick={() => navigator.clipboard.writeText("mcKismetLab.net")}></ButtonFocus>
         </div>
 
         <div className={styles.serverListDiv}>
