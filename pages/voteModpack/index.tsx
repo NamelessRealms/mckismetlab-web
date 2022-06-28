@@ -47,7 +47,7 @@ export default function VoteModpack() {
                 </div>
 
                 <div className={styles.bottomDiv}>
-                    <ButtonFocus className={styles.voteModpackButton} content="前往投票" disabled={true} onClick={() => window.open("https://forms.gle/tECwea72Qs5SNZeV8")} />
+                    <ButtonFocus className={styles.voteModpackButton} content="前往投票" disabled={false} onClick={() => window.open("https://forms.gle/tECwea72Qs5SNZeV8")} />
                 </div>
 
             </div>
