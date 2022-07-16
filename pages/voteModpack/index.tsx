@@ -13,10 +13,10 @@ interface IModpackHistory {
     url: string;
 }
 
-const seasonNumber = 34;
-const modpackName = "Project Ozone 3 (Kappa Mode)";
-const modpackUrl = "https://www.curseforge.com/minecraft/modpacks/project-ozone-3-a-new-way-forward";
-const modpackUrlImg = "https://media.forgecdn.net/avatars/thumbnails/153/427/64/64/636618242985977538.png";
+const seasonNumber = 35;
+const modpackName = "Enigmatica 2: Expert - Extended";
+const modpackUrl = "https://www.curseforge.com/minecraft/modpacks/enigmatica-2-expert-extended";
+const modpackUrlImg = "https://media.forgecdn.net/avatars/472/544/637762945960624722.png";
 
 export default function VoteModpack() {
 
