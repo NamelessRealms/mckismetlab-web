@@ -13,10 +13,10 @@ interface IModpackHistory {
     url: string;
 }
 
-const seasonNumber = 35;
-const modpackName = "Enigmatica 2: Expert - Extended";
-const modpackUrl = "https://www.curseforge.com/minecraft/modpacks/enigmatica-2-expert-extended";
-const modpackUrlImg = "https://media.forgecdn.net/avatars/472/544/637762945960624722.png";
+const seasonNumber = 36;
+const modpackName = "Sky FABRICation 3";
+const modpackUrl = "https://www.curseforge.com/minecraft/modpacks/sky-fabrication-3";
+const modpackUrlImg = "https://media.forgecdn.net/avatars/581/285/637946147256275674.png";
 
 export default function VoteModpack() {
 
