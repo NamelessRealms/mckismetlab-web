@@ -13,10 +13,10 @@ interface IModpackHistory {
     url: string;
 }
 
-const seasonNumber = 36;
-const modpackName = "Sky FABRICation 3";
-const modpackUrl = "https://www.curseforge.com/minecraft/modpacks/sky-fabrication-3";
-const modpackUrlImg = "https://media.forgecdn.net/avatars/581/285/637946147256275674.png";
+const seasonNumber = 37;
+const modpackName = "Not Too Complicated 2";
+const modpackUrl = "https://www.curseforge.com/minecraft/modpacks/not-too-complicated-2";
+const modpackUrlImg = "https://media.forgecdn.net/avatars/396/915/637597266930760605.png";
 
 export default function VoteModpack() {
 
