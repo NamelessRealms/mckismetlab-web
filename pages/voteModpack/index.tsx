@@ -13,10 +13,10 @@ interface IModpackHistory {
     url: string;
 }
 
-const seasonNumber = 37;
-const modpackName = "Not Too Complicated 2";
-const modpackUrl = "https://www.curseforge.com/minecraft/modpacks/not-too-complicated-2";
-const modpackUrlImg = "https://media.forgecdn.net/avatars/396/915/637597266930760605.png";
+const seasonNumber = 38;
+const modpackName = "Nomifactory (GTCEu Port)";
+const modpackUrl = "https://www.curseforge.com/minecraft/modpacks/nomi-ceu";
+const modpackUrlImg = "https://media.forgecdn.net/avatars/511/500/637830283066849322.png";
 
 export default function VoteModpack() {
 
