@@ -13,10 +13,10 @@ interface IModpackHistory {
     url: string;
 }
 
-const seasonNumber = 38;
-const modpackName = "Nomifactory (GTCEu Port)";
-const modpackUrl = "https://www.curseforge.com/minecraft/modpacks/nomi-ceu";
-const modpackUrlImg = "https://media.forgecdn.net/avatars/511/500/637830283066849322.png";
+const seasonNumber = 39;
+const modpackName = "Chroma Endless";
+const modpackUrl = "https://www.curseforge.com/minecraft/modpacks/chroma-endless";
+const modpackUrlImg = "https://media.forgecdn.net/avatars/627/26/638021459665750880.jpeg";
 
 export default function VoteModpack() {
 

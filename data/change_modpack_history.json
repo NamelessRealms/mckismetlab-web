@@ -188,5 +188,10 @@
         "name": "Nomifactory (GTCEu Port)",
         "version": "1.12.2",
         "url": "https://www.curseforge.com/minecraft/modpacks/nomi-ceu"
+    },
+    {
+        "name": "Chroma Endless",
+        "version": "1.16.5",
+        "url": "https://www.curseforge.com/minecraft/modpacks/chroma-endless"
     }
 ]
