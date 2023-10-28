@@ -23,7 +23,7 @@ export default function ModServer() {
         <div className={styles.modServerDiv}>
 
             <Head>
-                <title>模組包伺服器 | mcKismetLab</title>
+                <title>模組包伺服器 | Nameless Realms</title>
             </Head>
 
             <TopBar />
@@ -48,7 +48,7 @@ export default function ModServer() {
                     <div className={styles.container}>
 
                         <h1 className={styles.label}>模組包伺服器</h1>
-                        <p className={styles.description}>我們提供您自由探索多人遊玩平台、模組討論區、管理伺服等等服務，讓你不用煩惱自架伺服器或不會玩模組的問題。</p>
+                        <p className={styles.description}>歡迎來到模組包伺服器！我們為您提供多人遊玩平台、模組討論區、伺服管理等多項服務，讓您輕鬆探索、遊玩，無需擔心自行建立伺服器或不熟悉模組的困擾。</p>
 
                         <div className={styles.buttonDiv}>
                             <ButtonFocus className={styles.buttonFocusDiscord} content="DISCORD" onClick={() => window.open("https://discord.com/invite/8BB3NY8")}></ButtonFocus>
@@ -101,8 +101,8 @@ export default function ModServer() {
 
             {/* block 03 */}
             <TextImg
-                label="全年無休，365天不間斷"
-                description="365天 24hr 不停開服，不會突然無預警關服消失。"
+                label="全年無休，一年365天不間斷"
+                description="我們的伺服器每天提供穩定遊戲體驗，絕不會無預警關閉。"
                 imgSrc={serverQuasiImg}
                 reverse={true}
                 imgDivWidth="50%"
@@ -110,8 +110,8 @@ export default function ModServer() {
 
             {/* block 04 */}
             <TextImg
-                label="讓玩家以投票的方式選擇模組包"
-                description="給玩家可以以投票的方式選擇模組包你想要玩的模組包。"
+                label="讓玩家透過投票選擇你喜愛的模組包！"
+                description="給玩家以投票的方式選擇你喜愛的模組包。"
                 imgSrc={voteImg}
                 imgDivWidth="50%"
             />
@@ -119,7 +119,7 @@ export default function ModServer() {
             {/* block 05 */}
             <TextImg
                 label="定期更換不同的模組包"
-                description="我們定期更換不同的模組包，不會突然停換模組包，造成空服的問題。"
+                description="我們會定期輪換不同的模組包，無需擔心模組包更換會突然中斷伺服器遊戲體驗。"
                 imgSrc={regularImg}
                 reverse={true}
                 imgDivWidth="50%"
@@ -135,16 +135,16 @@ export default function ModServer() {
                     <div className={styles.rulesDiv}>
                         <CardText
                             label="禁止使用BUG"
-                            description="玩模組能讓你強大和輕鬆，沒必要使用BUG"
+                            description="在模組的幫助下，你可以變得更強，所以請不要使用BUG。"
                         />
                         <CardText
                             className={styles.cardTextCenter}
                             label="禁止破壞伺服器"
-                            description="破壞伺服器是非常可惡的行為，不管是國外服或國內服都不應該破壞別人的伺服器!"
+                            description="破壞伺服器是不道德的，無論是國內還是國外伺服器，都不應該傷害別人的伺服器體驗！"
                         />
                         <CardText
-                            label="不要欺負丶騷擾玩家"
-                            description="大家好好的當個好公民不要當別人不喜歡你的壞玩家"
+                            label="不要欺負或騷擾其他玩家"
+                            description="讓我們共同做個好公民，不要惡意對待其他玩家。讓大家都能享受遊戲的樂趣。"
                         />
                     </div>
 

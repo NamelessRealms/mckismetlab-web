@@ -29,7 +29,7 @@ export default function Team() {
                     <div className={styles.container}>
 
                         <div className={styles.leftDiv}>
-                            <h1 className={styles.label}>在在在 <br /> 無名伺服器 <br /> 團隊</h1>
+                            <h1 className={styles.label}>無名伺服器 <br /> 團隊</h1>
                             {/* <p className={styles.description}></p> */}
                         </div>
 
@@ -62,7 +62,7 @@ export default function Team() {
                             src={quasiImg}
                             alt="figure"
                         />
-                        <h1 className={styles.figureLabel}>Quasi</h1>
+                        <h1 className={styles.figureLabel}>Yu // 無名</h1>
                     </div>
 
                     <div className={styles.figureImgDiv}>
@@ -71,7 +71,7 @@ export default function Team() {
                             src={moonFlameImg}
                             alt="figure"
                         />
-                        <h1 className={styles.figureLabel}>Moon_Flame</h1>
+                        <h1 className={styles.figureLabel}>Moon_Flame // 月焰</h1>
                     </div>
 
                     <div className={styles.figureImgDiv}>
@@ -80,7 +80,7 @@ export default function Team() {
                             src={liujuhsinImg}
                             alt="figure"
                         />
-                        <h1 className={styles.figureLabel}>liujuhsin</h1>
+                        <h1 className={styles.figureLabel}>liujuhsin // 嚕嚕訊</h1>
                     </div>
 
                 </div>

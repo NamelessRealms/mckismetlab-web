@@ -20,7 +20,7 @@ export default function Home() {
     <div className={styles.homeDiv}>
 
       <Head>
-        <title>無名伺服器 | mcKismetLab</title>
+        <title>無名伺服器 | Nameless Realms</title>
       </Head>
 
       <TopBar />
@@ -42,7 +42,7 @@ export default function Home() {
         <div className={styles.pageTopLabelDiv}>
           <div className={styles.container}>
             <h1 className={styles.label}>無名伺服器</h1>
-            <h1 className={styles.label}>探索生存</h1>
+            <h1 className={styles.label}>模組生存</h1>
             <div className={styles.buttonDiv}>
               <ButtonFocus className={styles.buttonFocusDiscord} content="DISCORD" onClick={() => window.open("https://discord.com/invite/8BB3NY8")}></ButtonFocus>
               <ButtonFocus className={styles.buttonFocusLauncher} content="下載啟動器" onClick={() => router.push("/launcher")}></ButtonFocus>
@@ -55,7 +55,7 @@ export default function Home() {
       {/* block 02 */}
       <TextImg
         label="長期開服，服務不間斷"
-        description="我們提供穩定的多人遊玩伺服器、社群討論區等等服務，不會突然無預警關服。"
+        description="我們的伺服器長期開放，服務穩定持續。不論您需要多人遊玩伺服器、社群討論區，我們都為您提供不間斷的服務，絕不會無預警中斷服務！"
         imgSrc={serverQuasiImg}
         imgDivWidth="50%"
       />
@@ -63,7 +63,7 @@ export default function Home() {
       {/* block 03 */}
       <TextImg
         label="自己開發，啟動器"
-        description="我們開發的無名啟動器，給你方便快速啟動遊戲，無需自己安裝模組包、Java、自定義模組，就能馬上進來遊玩。"
+        description="我們自己開發的無名啟動器！這個啟動器能夠快速啟動遊戲，無需您自己安裝模組包、Java、或自訂模組。只要輕鬆點擊，您就能立即享受遊戲的樂趣！"
         imgSrc={launcherImg}
         reverse={true}
         imgDivWidth="50%"
@@ -72,11 +72,11 @@ export default function Home() {
       {/* block 04 */}
       <div className={styles.block04Server}>
 
-        <h1 className={styles.label}>無名伺服器，現在正在開服中</h1>
+        <h1 className={styles.label}>無名伺服器，目前正在開放中，歡迎您的加入！</h1>
 
         <div className={styles.discordAndIpButtonDiv}>
           <ButtonFocus className={styles.buttonFocusDiscord} content="DISCORD" onClick={() => window.open("https://discord.com/invite/8BB3NY8")}></ButtonFocus>
-          <ButtonFocus className={styles.buttonFocusServerIp} content="play.mcKismetLab.net" onClick={() => navigator.clipboard.writeText("play.mcKismetLab.net")}></ButtonFocus>
+          <ButtonFocus className={styles.buttonFocusServerIp} content="namelessrealms.com" onClick={() => navigator.clipboard.writeText("play.mcKismetLab.net")}></ButtonFocus>
         </div>
 
         <div className={styles.serverListDiv}>

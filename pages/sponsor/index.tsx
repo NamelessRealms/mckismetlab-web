@@ -15,7 +15,7 @@ export default function Sponsor() {
         <div className={styles.sponsorDiv}>
 
             <Head>
-                <title>贊助我們 | mcKismetLab</title>
+                <title>贊助我們 | Nameless Realms</title>
             </Head>
 
             <TopBar />
@@ -37,7 +37,7 @@ export default function Sponsor() {
                                 />
                             </div>
                             <h1 className={styles.label}>贊助我們</h1>
-                            <p className={styles.description}>長期架設伺服器需要耗費大量時間與金錢，如果你願意提供贊助，我們非常的感謝你。</p>
+                            <p className={styles.description}>長期維護伺服器需要耗費時間和金錢，而您的贊助對我們來說非常重要，我們衷心感謝您的支持！</p>
 
                         </div>
 
@@ -72,25 +72,25 @@ export default function Sponsor() {
                 <div className={styles.container}>
 
                     <h1 className={styles.label}>贊助能獲得什麼福利？</h1>
-                    <p className={styles.description}>嚴格來說你並不會有福利，我們希望你是有心想支持我們長期架設伺服器才贊助的，而不是為了快速取得某種東西、福利、功能而贊助我們，但我們還是會有小小的福利與功能給支持我們的玩家。</p>
-                    <p className={styles.description}>看一下我們給你什麼小福利與功能。</p>
+                    <p className={styles.description}>嚴格來說你並不會有福利，贊助可以讓你參與伺服器的長期運營，讓我們提供更好的服務和體驗。雖然我們希望玩家支持我們出於對伺服器的愛，而不是僅為了特定福利，但我們還是會為贊助者提供一些小禮物和特殊功能，以示感謝，看一下我們給你什麼小福利與功能。</p>
+                    {/* <p className={styles.description}>看一下我們給你什麼小福利與功能。</p> */}
 
                     <div className={styles.welfaresDiv}>
 
                         <CardText
                             className={styles.cardText}
                             label="Discord 贊助者身分組"
-                            description="讓大家知道你是贊助者"
+                            description="Discord 伺服器上的贊助者提供了一個特別的身分組。"
                         />
                         <CardText
                             className={`${styles.cardTextCenter} ${styles.cardText}`}
                             label="永久白名單"
-                            description="不用煩惱你不會被定期未達遊玩時數而失去白名單"
+                            description="無需擔心，您不會因遊玩時間不足而失去白名單。"
                         />
                         <CardText
                             className={styles.cardText}
                             label="代表你的支持"
-                            description="Minecraft 聊天室會顯示你是贊助者"
+                            description="Minecraft 聊天室中顯示你是一位贊助者。"
                         />
 
                     </div>

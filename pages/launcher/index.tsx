@@ -34,7 +34,7 @@ export default function Launcher(props: IProps) {
         <div className={styles.launcherDiv}>
 
             <Head>
-                <title>無名啟動器 | mcKismetLab</title>
+                <title>無名啟動器 | Nameless Realms</title>
             </Head>
 
             <TopBar />
@@ -58,7 +58,7 @@ export default function Launcher(props: IProps) {
                     <div className={styles.container}>
 
                         <h1 className={styles.label}>無名啟動器</h1>
-                        <p className={styles.description}>我們開發的模組啟動器，給你方便快速啟動遊戲，無需自己安裝模組包、Java、自定義模組，就能馬上進來遊玩。</p>
+                        <p className={styles.description}>無名啟動器是我們開發的一款模組啟動器，讓你可以輕鬆、快速地啟動遊戲，而不必擔心繁瑣的安裝程序。</p>
 
                         <div className={styles.buttonDiv}>
                             {
@@ -104,8 +104,8 @@ export default function Launcher(props: IProps) {
             {/* block 02 */}
             <TextImg
                 className={styles.textImg}
-                label="簡潔舒適的 UI"
-                description="沒有複雜的UI設計，就簡單、舒適、容易使用。"
+                label="簡單又舒適的介面"
+                description="易於使用的簡單介面，沒有繁瑣的設計，只有簡單舒適的體驗。"
                 imgSrc={launcher01Img}
                 reverse={false}
                 backgroundColor="--dark-03-color"
@@ -114,7 +114,7 @@ export default function Launcher(props: IProps) {
             <TextImg
                 className={styles.textImg}
                 label="Java 設定管理"
-                description="你可以個別設定 Java 記憶體、參數、指定路徑。"
+                description="你可以個別設定 Java 記憶體、參數、設定路徑。"
                 imgSrc={launcher02Img}
                 reverse={true}
                 backgroundColor="--dark-03-color"
@@ -123,7 +123,7 @@ export default function Launcher(props: IProps) {
             <TextImg
                 className={styles.textImg}
                 label="自動安裝"
-                description="自動安裝模組包、自定義模組、模組載入器，不需要你自己手動安裝。"
+                description="不必手動安裝模組包、自訂模組或模組載入程式，一切都自動進行。 "
                 imgSrc={launcher03Img}
                 reverse={false}
                 backgroundColor="--dark-03-color"
@@ -132,7 +132,7 @@ export default function Launcher(props: IProps) {
             <TextImg
                 className={styles.textImg}
                 label="國際化"
-                description="啟動器支持多語言，快速切換語言。"
+                description="我們的啟動器支援多種語言，讓您輕鬆切換語言。"
                 imgSrc={launcher04Img}
                 reverse={true}
                 backgroundColor="--dark-03-color"
