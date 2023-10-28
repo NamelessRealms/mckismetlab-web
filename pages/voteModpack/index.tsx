@@ -13,10 +13,10 @@ interface IModpackHistory {
     url: string;
 }
 
-const seasonNumber = 39;
-const modpackName = "Chroma Endless";
-const modpackUrl = "https://www.curseforge.com/minecraft/modpacks/chroma-endless";
-const modpackUrlImg = "https://media.forgecdn.net/avatars/627/26/638021459665750880.jpeg";
+const seasonNumber = 42;
+const modpackName = "Enigmatica 9";
+const modpackUrl = "https://www.curseforge.com/minecraft/modpacks/enigmatica9";
+const modpackUrlImg = "https://media.forgecdn.net/avatars/557/558/637904430386629931.jpeg";
 
 export default function VoteModpack() {
 

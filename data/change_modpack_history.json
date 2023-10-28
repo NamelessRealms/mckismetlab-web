@@ -193,5 +193,20 @@
         "name": "Chroma Endless",
         "version": "1.16.5",
         "url": "https://www.curseforge.com/minecraft/modpacks/chroma-endless"
+    },
+    {
+        "name": "FTB Presents Direwolf20 1.19",
+        "version": "1.19.2",
+        "url": "https://www.feed-the-beast.com/modpacks/101-ftb-presents-direwolf20-119?tab=about"
+    },
+    {
+        "name": "FTB StoneBlock 3",
+        "version": "1.18.2",
+        "url": "https://www.feed-the-beast.com/modpacks/100-ftb-stoneblock-3?tab=about"
+    },
+    {
+        "name": "Enigmatica 9",
+        "version": "1.19.2",
+        "url": "https://www.curseforge.com/minecraft/modpacks/enigmatica9"
     }
 ]
