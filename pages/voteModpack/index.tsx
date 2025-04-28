@@ -36,7 +36,8 @@ export default function VoteModpack() {
                     <div className={styles.container}>
 
                         <h2 className={styles.seasonText}>{`第 ${seasonNumber} 季`}</h2>
-                        <h1 className={styles.label}>正在開放遊玩中，快來加入吧！</h1>
+                        {/* <h1 className={styles.label}>正在開放遊玩中，快來加入吧！</h1> */}
+                        <h1 className={styles.label}>正在準備中...</h1>
 
                         <div className={styles.modpack} onClick={() => window.open(modpackUrl)}>
                             <img src={modpackUrlImg} alt="Modpack" />

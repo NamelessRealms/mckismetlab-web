@@ -16,7 +16,7 @@ export default function Team() {
         <div className={styles.teamDiv}>
 
             <Head>
-                <title>團隊 | mcKismetLab</title>
+                <title>團隊 | Nameless Realms</title>
             </Head>
 
             <TopBar />

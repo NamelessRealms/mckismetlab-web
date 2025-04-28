@@ -72,7 +72,7 @@ export default function Home() {
       {/* block 04 */}
       <div className={styles.block04Server}>
 
-        <h1 className={styles.label}>無名伺服器，目前正在開放中，歡迎您的加入！</h1>
+        <h1 className={styles.label}>無名伺服器，目前正在準備中，歡迎您的加入！</h1>
 
         <div className={styles.discordAndIpButtonDiv}>
           <ButtonFocus className={styles.buttonFocusDiscord} content="DISCORD" onClick={() => window.open("https://discord.com/invite/8BB3NY8")}></ButtonFocus>
