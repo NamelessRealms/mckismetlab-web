@@ -30,7 +30,7 @@ jobs:
     - name: Login to private registry
       uses: docker/login-action@v3
       with:
-        registry: namelessrealms.com
+        registry: registry.namelessrealms.com
         username: ${{ secrets.MCKISMETLAB_DOCKER_REGISTRY_USERNAME }}
         password: ${{ secrets.MCKISMETLAB_DOCKER_REGISTRY_PASSWORD }}
 
