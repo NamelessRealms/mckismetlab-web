@@ -1,4 +1,4 @@
-import TopBar from "../components/TopBar/TopBar"
+import TopBar from "../src/components/TopBar/TopBar"
 import styles from "./Home.module.scss"
 import Head from "next/head";
 
@@ -7,10 +7,10 @@ import { useRouter } from "next/router";
 import serverQuasiImg from "../assets/images/figure/server_quasi.png";
 import launcherImg from "../assets/images/figure/launcher.png";
 import server01Img from "../assets/images/background/server_01.png";
-import ButtonFocus from "../components/buttonFocus/ButtonFocus";
-import TextImg from "../components/textImg/TextImg";
-import ImageZoomText from "../components/imageZoomText/ImageZoomText";
-import Footer from "../components/footer/Footer";
+import ButtonFocus from "../src/components/buttonFocus/ButtonFocus";
+import TextImg from "../src/components/textImg/TextImg";
+import ImageZoomText from "../src/components/imageZoomText/ImageZoomText";
+import Footer from "../src/components/footer/Footer";
 
 export default function Home() {
 

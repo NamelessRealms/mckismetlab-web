@@ -5,9 +5,9 @@ import Head from "next/head";
 
 import mcKismetLabTitleLog from "../../assets/images/logo/mckismetlab-title.png";
 import sponsorImg from "../../assets/images/figure/sponsor.png";
-import TopBar from "../../components/TopBar/TopBar";
-import CardText from "../../components/cardText/CardText";
-import Footer from "../../components/footer/Footer";
+import TopBar from "../../src/components/TopBar/TopBar";
+import CardText from "../../src/components/cardText/CardText";
+import Footer from "../../src/components/footer/Footer";
 
 export default function Sponsor() {
 

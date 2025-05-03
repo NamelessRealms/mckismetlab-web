@@ -9,11 +9,11 @@ import server01Img from "../../assets/images/background/server_01.png";
 import serverQuasiImg from "../../assets/images/figure/server_quasi.png"
 import voteImg from "../../assets/images/figure/vote.png";
 import regularImg from "../../assets/images/figure/regular.png";
-import ButtonFocus from "../../components/buttonFocus/ButtonFocus";
-import TextImg from "../../components/textImg/TextImg";
-import CardText from "../../components/cardText/CardText";
-import Footer from "../../components/footer/Footer";
-import TopBar from "../../components/TopBar/TopBar";
+import ButtonFocus from "../../src/components/buttonFocus/ButtonFocus";
+import TextImg from "../../src/components/textImg/TextImg";
+import CardText from "../../src/components/cardText/CardText";
+import Footer from "../../src/components/footer/Footer";
+import TopBar from "../../src/components/TopBar/TopBar";
 
 export default function ModServer() {
 

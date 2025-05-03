@@ -6,12 +6,12 @@ import launcher01Img from "../../assets/images/background/launcher_01.png";
 import launcher02Img from "../../assets/images/background/launcher_02.png";
 import launcher03Img from "../../assets/images/background/launcher_03.png";
 import launcher04Img from "../../assets/images/background/launcher_04.png";
-import TopBar from "../../components/TopBar/TopBar";
-import ButtonFocus from "../../components/buttonFocus/ButtonFocus";
-import TextImg from "../../components/textImg/TextImg";
-import Footer from "../../components/footer/Footer";
+import TopBar from "../../src/components/TopBar/TopBar";
+import ButtonFocus from "../../src/components/buttonFocus/ButtonFocus";
+import TextImg from "../../src/components/textImg/TextImg";
+import Footer from "../../src/components/footer/Footer";
 import { GetStaticProps } from "next";
-import DropMenuNavigator from "../../components/dropMenuNavigator/DropMenuNavigator";
+import DropMenuNavigator from "../../src/components/dropMenuNavigator/DropMenuNavigator";
 
 interface ILauncher {
     version: string;

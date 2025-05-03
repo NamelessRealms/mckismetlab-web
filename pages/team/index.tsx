@@ -7,8 +7,8 @@ import liujuhsinImg from "../../assets/images/figure/liujuhsin.png";
 import moonFlameImg from "../../assets/images/figure/Moon_Flame.png";
 import quasiImg from "../../assets/images/figure/quasi.png";
 import teamImg from "../../assets/images/figure/team.png";
-import TopBar from "../../components/TopBar/TopBar";
-import Footer from "../../components/footer/Footer";
+import TopBar from "../../src/components/TopBar/TopBar";
+import Footer from "../../src/components/footer/Footer";
 
 export default function Team() {
 

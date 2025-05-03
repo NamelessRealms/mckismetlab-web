@@ -3,9 +3,9 @@ import styles from "./VoteModpack.module.scss";
 import Head from "next/head";
 
 import changeModpackHistory from "../../data/change_modpack_history.json";
-import TopBar from "../../components/TopBar/TopBar";
-import Footer from "../../components/footer/Footer";
-import ButtonFocus from "../../components/buttonFocus/ButtonFocus";
+import TopBar from "../../src/components/TopBar/TopBar";
+import Footer from "../../src/components/footer/Footer";
+import ButtonFocus from "../../src/components/buttonFocus/ButtonFocus";
 
 interface IModpackHistory {
     name: string;
